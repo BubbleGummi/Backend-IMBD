@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import "./movieclicked.css";
 import { Link } from "react-router-dom";
 import Recent from "../components/Recent";
+import  Navbar  from "../components/Navbar";
 
 function MovieClicked({ recently, setRecently }) {
   const [movieInfo, setMovieInfo] = useState({});
@@ -25,19 +26,18 @@ function MovieClicked({ recently, setRecently }) {
 
     setRecently([movie, ...recently].slice(0, 5));
   };
-
   return (
     <>
-      <h2 className="clicked-title">{movieInfo.title}</h2>
+      <Navbar />
       <Link to={"/"} className="title">
         <button type="button" className="redirect">
-          Back to Movies
+          <h4>Back to Movies</h4>
         </button>
       </Link>
       <div className="movieclicked">
         <article className="moviedescription">
           <div className="imagediv">
- <img
+            <img
               className="movieimageclicked"
               src={
                 "https://www.themoviedb.org/t/p/w440_and_h660_face" +
@@ -45,25 +45,22 @@ function MovieClicked({ recently, setRecently }) {
               }
               alt={movieInfo.title}
             />
-          </div>
+          </div>          
           <div className="description">
+          <h2 className="clicked-title">{movieInfo.title}</h2>
             <p className="p">
-              <b>Overview:</b> {movieInfo.overview}
+              Overview:{movieInfo.overview}
             </p>
             <p className="p">
               {" "}
               <b>Release Date:</b> {movieInfo.release_date}
             </p>
             <p className="p">
-              <b>Popularity:</b> {movieInfo.popularity}
+              Popularity: {movieInfo.popularity}
             </p>
             <p className="p">
               {" "}
-              <b>Vote Average:</b> {movieInfo.vote_average}
-            </p>
-            <p className="p">
-              {" "}
-              <b>Number of Votes:</b> {movieInfo.vote_count}
+              Vote Average: {movieInfo.vote_average}
             </p>
           </div>
         </article>

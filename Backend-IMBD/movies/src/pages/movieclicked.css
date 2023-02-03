@@ -5,48 +5,40 @@
     font-size: 1.3rem;
     flex-direction: column;
     align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-   border-radius: 15%;
-   background-color: rgba(0, 0, 0, 0.505);
-   
-   
-
-    
-}
-
-.imagediv {
-    display: flex;
+    border-radius: 15%;
+    width: 50rem;
+    margin-left: 36rem;
 }
 
 .p {
-    border-bottom: 2px solid rgb(183, 137, 21);
-    margin-bottom: 1%;
-    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    width: 30rem;
+    border-bottom: 1px dotted #01b4e4;
+    margin-bottom: 2px;
 }
 
 .movieimageclicked {
-   border-radius: 10%;
-   height: 80vh;
-   width: 400px;
-   margin-bottom: 10%;
-    
+    margin: 2rem;
+    border-radius: 5%;
+    border: 1px solid #01b4e4;
+    height: 40rem;
+    width: 30rem;
 }
 
 .clicked-title {
     text-align: center;
-    color: white;
-    margin-bottom: 0;
+    color: #01b4e4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .redirect {
     background-color: black;
-    border: 2px solid rgb(183, 137, 21);
-    color: white;
-    position: fixed;
-    left: 0;
-    margin-left: 6%;
+    border: 1px solid #01b4e4;
+    color: #01b4e4;
+    margin-left: 5rem;
+    margin-top: 2rem;
     border-radius: 50%;
     padding: 1%;
     cursor: pointer;
@@ -57,21 +49,13 @@
     margin-bottom: 5%;
     border-radius: 15%;
     color: white;
-   flex-direction: column;
-   align-items: center;
-  
-
+    flex-direction: column;
+    align-items: center;
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    margin-left: 5px;
 }
 
-@media only screen and (max-width: 402px) {
-
-    .movieimageclicked {
-        width: 300px;
-    }
-}
