@@ -1,0 +1,76 @@
+.moviecontainer {
+    width: 90rem;
+    display: flex;
+    flex-flow: row nowrap;
+    max-height: 500px;
+    margin-bottom: 2%;
+    overflow-x: auto;
+    margin-left: 15rem;
+}
+body::-webkit-scrollbar {
+    background-color: #0d253f;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #90cea1;
+}
+.moviecontainer::-webkit-scrollbar {
+  background-color: #0d253f;
+}
+.moviecontainer::-webkit-scrollbar-thumb {
+  background-color: #90cea1;
+  border-radius: 5px;
+}
+.movie {
+margin: .5rem;
+}
+
+.movieimage {
+    height: 255px;
+    margin-bottom: 0;
+    border: 1px solid #90cea1;
+    border-radius: 10%;
+}
+
+.title {
+    margin-bottom: 10vh;
+    height: 8vh;
+    margin-top: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #90cea1;
+    text-align: center;
+}
+.title:hover {
+    color: #01b4e4;
+}
+.info {
+    display: flex;
+    justify-content: center;
+}
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.votestar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.moviecontainersearch {
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+}
+
+.moviesearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

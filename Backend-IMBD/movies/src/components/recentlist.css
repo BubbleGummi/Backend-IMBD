@@ -1,0 +1,50 @@
+.recent-container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50vh;
+    background-color: black;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.recentlist {
+    height: 35vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+
+}
+
+.recentimg {
+   max-height: 40vh;
+   width: 15vw;
+   margin: 0;
+   border: 2px solid rgb(183, 137, 21);
+   border-radius: 10%;
+}
+
+.recentmovie {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+
+}
+
+.recent-heading {
+    color: white;
+    text-align: center;
+}
+
+.recent-title {
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0;
+}

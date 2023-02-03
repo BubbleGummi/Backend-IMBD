@@ -1,0 +1,40 @@
+html {
+    background-color: #0d253f;
+}
+
+.App {
+  text-align: center;
+  background-color: rgba(27, 25, 25, 0.323);
+  color: white;
+  font-family: garamond;
+}
+
+header {
+  background-color: #0d253f;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #90cea1;
+  padding: 1rem;
+}
+
+.API-source {
+  width: 20%;
+}
+
+.searchmovie {
+  border-radius: 10px;
+  font-size: 1.05rem;
+  padding: 0.9rem;
+  width: 100%;
+  background-color: black;
+  color: #01b4e4;
+}
+
+footer {
+  background-color: #0d253f;
+  color:#01b4e4;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
